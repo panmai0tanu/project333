@@ -7,6 +7,14 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+ table, th, td {
+    border: 1px solid black;
+}
+ a { 
+    color: black;
+    text-decoration: underline;
+    cursor: auto;
+}
 
 .clearfix {
   *zoom: 1;
@@ -30,6 +38,8 @@
   background-color: transparent;
   border: 0;
 }
+
+
 
 .input-block-level {
   display: block;
@@ -80,6 +90,11 @@ a:focus {
 a:hover,
 a:active {
   outline: 0;
+}
+
+.heads h1{
+  color: #D8D8D8; 
+  font-size: 50px;
 }
 
 sub,
