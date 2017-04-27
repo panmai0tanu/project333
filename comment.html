@@ -18,15 +18,59 @@
         <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-    <div class="contact-info">
+          
+          <div class="container">
+
+                <div class="row-fluid">
+                               
+                    <div class="span8 offset2" ">
+                      <div class="site-header">
+                            <br>
+                            <div class="title1">พระราชประวัติโดยสังเขป<br><br>พระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช</div>
+                            <br>
+                            <br>
+                            <div class="menu" align="center">
+                                <div class="navbar">
+                                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                        <i class="fw-icon-th-list"></i>
+                                    </a>
+                                    <div class="nav-collapse collapse">
+                                        <ul class="nav">
+                                            <li ><a href="index2.html">หน้าเเรก</a></li>
+                                            <li><a href="imformation/birth.html"  target="_bank">พระราชประวัติ</a></li>
+                                            <li ><a href="pic.html">พระบรมสาทิสลักษณ์</a></li>
+                                            <li class="active"><a href="comment.html">ลงนามถวายพระพร</a></li>
+                                        </ul>
+                                    </div><!--/.nav-collapse -->
+                                </div>
+                                <div class="mini-menu">
+                                  <label>
+                                    <select class="selectnav">
+                                      <option value="index2.html" selected="index2.html">หน้าแรก</option>
+                                      <option value="imformation/birth.html" selected="imformation/birth.html">พระราชประวัติ</option>
+                                      <option value="pic.html">พระบรมสาทิสลักษณ์</option>
+                                      <option value="comment.html">ลงนามถวายพระพร</option>
+                                      
+                                    </select>
+                                  </label>
+                                </div>
+                            </div>
+                    <div class="banner-shadow">
+                        <div class="banner">
+                            
+                        </div>
+                        </div>
+                        </div>
+                  <div class="contact-info">
                             <h1>ลงนามถวายความอาลัย</h1>
                             <h2>ปวงข้าพระพุทธเจ้า ขอน้อมเกล้าน้อมกระหม่อมรำลึกในพระมหากรุณาธิคุณหาที่สุดมิได้</h2>
                            
-                              <form method="get" action="text.php">
+                              <form method="post" action="php/text.php">
                                   <div class="controls">
                                       <h2 align="left">ข้าพระพุทธเจ้า</h2>
-                                      <input id="name" name="fname" type="text" class="span5" placeholder="Name here.."> 
-                                      <input id="lname" name="lname" type="text" class="span5" placeholder="Surname here..">
+                                      <input id="name" name="fname" type="text" class="span5" placeholder="Name here.." required> 
+                                      <input id="lname" name="lname" type="text" class="span5" placeholder="Surname here.." required>
+                                      
                                   </div>
                                   <div class="controls">
                                       <textarea id="comment" name="comment" class="span10" placeholder="Comment here.." rows="5"></textarea>
@@ -34,18 +78,15 @@
                                   
                                   <div class="controls">
                                       <button id="contact-submit"  type="submit" class="btn">ลงนามถวายความอาลัย</button>
-                                      <form action="index.html" method="get">
-                                        <button id="contact-submit" type="submit" class="btn">ย้อนกลับ</button>
-                                      </form>
-                                  </div>
+                                      <a href="php/selects.php" class="btn">รายชื่อผู้ลงนาม</a>
+                                      
+                                  </div>  
+                                  
                               </form>
-                        <form action="php/selects.php" >
-                          <div align="right" class="controls" style="margin-right: 200px">
-                            <input type="submit" name="button" value="รายชื่อผู้ลงนาม" class="btn"></input>
-                          </div>
-                        </form>      
+                      
+                          
                             
-                        </div>
+          </div>
                         
     </body>
 </html>

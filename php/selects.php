@@ -45,12 +45,11 @@
 
 <?php
     
-    $conn = new mysqli("localhost", "root", "", "db1");
-    if ($conn->connect_error){
-        die("Connection failed:" .$conn->connect_error);
-    }
+    $conn = mysqli_connect("localhost", "root", "", "db1");
+    
+        mysqli_set_charset($conn, "utf8");
 
-    $sql = "SELECT * FROM person ";
+    $sql = "SELECT * FROM person2 ";
     $objQuery = $conn->query($sql);
 
     while($objResult = $objQuery->fetch_assoc()){
@@ -85,7 +84,7 @@
             </div>
             <br>
             <br>
-            <form action="../index.html" >
+            <form action="../comment.html" >
                 <div class="controls" >
                     <input type="submit" name="button" value="ย้อนกลับ" class="btn"></input>
                 </div>
